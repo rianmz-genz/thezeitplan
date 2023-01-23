@@ -32,7 +32,7 @@ const Navbar = () => {
             <NavLink target="#price" children="Harga" />
             <NavLink target="#testimonials" children="Testimoni" />
             <Button
-              href="/download"
+              href="#download"
               buttonStyle="ButtonDownloadPrimary"
               value="Download ->"
             />

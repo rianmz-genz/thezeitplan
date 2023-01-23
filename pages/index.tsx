@@ -4,6 +4,8 @@ import WhySection from "../components/organisms/WhySection";
 import FeaturesSection from "../components/organisms/FeaturesSection";
 import PriceSection from "../components/organisms/PriceSection";
 import TestimonialsSection from "../components/organisms/TestimonialsSection";
+import DownloadSection from "../components/organisms/DownloadSection";
+import Footer from "../components/organisms/Footer";
 export default function Home() {
   return (
     <PageTemplate>
@@ -34,6 +36,13 @@ export default function Home() {
       >
         <TestimonialsSection />
       </section>
+      <section
+      id="download"
+        className="w-full pb-8 h-fit flex justify-center"
+      >
+        <DownloadSection />
+      </section>
+      <Footer />
     </PageTemplate>
   );
 }

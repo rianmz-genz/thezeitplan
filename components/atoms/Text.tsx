@@ -18,6 +18,9 @@ interface TextType {
     | "Username"
     | "Review"
     | "Role"
+    | "FooterText"
+    | "FooterTitle"
+    | "Copyright"
 }
 
 const Text = ({ textStyle, value, textColor }: TextType) => {
@@ -49,6 +52,12 @@ const Text = ({ textStyle, value, textColor }: TextType) => {
         return "font-poppins leading-6"
       case "Role":
         return "font-poppins text-xs"
+      case "FooterText":
+        return "font-source leading-6"
+      case "FooterTitle":
+        return "font-patua"
+      case "Copyright":
+        return "font-source font-semibold"
     }
   };
   const getTextColor = () => {
