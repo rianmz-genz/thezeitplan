@@ -3,7 +3,11 @@ import React from "react";
 interface ButtonProps {
   href: string;
   value: string | JSX.Element;
-  buttonStyle: "ButtonDownloadPrimary" | "ButtonPrimary" | "ButtonLight";
+  buttonStyle:
+    | "ButtonDownloadPrimary"
+    | "ButtonPrimary"
+    | "ButtonLight"
+    | "ButtonPrice";
 }
 const Button = ({ href, value, buttonStyle }: ButtonProps) => {
   const getButtonStyle = () => {
@@ -14,12 +18,14 @@ const Button = ({ href, value, buttonStyle }: ButtonProps) => {
         return "px-12 py-3 bg-primary text-white rounded-lg shadow-xl shadow-primarylight";
       case "ButtonLight":
         return "px-12 py-3 bg-primarylight text-primary rounded-lg border border-primarylight";
+      case "ButtonPrice":
+        return "w-full bg-primary hover:shadow-xl hover:shadow-primarylight transition-all duration-300 text-white rounded-lg flex items-center justify-center py-3";
     }
   };
   return (
-    <Link className={`${getButtonStyle()}`} href={href}>
+    <a className={`${getButtonStyle()}`} href={href}>
       {value}
-    </Link>
+    </a>
   );
 };
 

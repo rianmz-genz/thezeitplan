@@ -20,7 +20,6 @@ const SectionParagraph = ({
       ) : (
         <Text textStyle="SectionTitleTwo" value={title} textColor="JustDark" />
       )}
-
       <Text
         textStyle="SectionDescription"
         value={description}

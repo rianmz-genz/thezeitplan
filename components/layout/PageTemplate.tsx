@@ -5,7 +5,7 @@ interface PageTemplateProps {
   children: ReactNode;
   title?: string;
 }
-const PageTemplate = ({ children, title = "Zeitplan" }: PageTemplateProps) => {
+const PageTemplate = ({ children, title = "The Zeitplan" }: PageTemplateProps) => {
   return (
     <>
       <Head>

@@ -12,6 +12,12 @@ interface TextType {
     | "CardFeatureTitle"
     | "InterLight"
     | "InterBold"
+    | "FeatureTitle"
+    | "PriceSubtitle"
+    | "PriceTitle"
+    | "Username"
+    | "Review"
+    | "Role"
 }
 
 const Text = ({ textStyle, value, textColor }: TextType) => {
@@ -31,6 +37,18 @@ const Text = ({ textStyle, value, textColor }: TextType) => {
         return "font-inter text-light"
       case "InterBold":
         return "font-inter font-semibold text-2xl"
+      case "FeatureTitle":
+        return "font-patua text-xl"
+      case "PriceSubtitle":
+        return "font-ibm font-semibold text-sm"
+      case "PriceTitle":
+        return "font-patua text-3xl";
+      case "Username":
+        return "font-poppins font-semibold"
+      case "Review":
+        return "font-poppins leading-6"
+      case "Role":
+        return "font-poppins text-xs"
     }
   };
   const getTextColor = () => {

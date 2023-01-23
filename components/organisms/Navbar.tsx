@@ -16,7 +16,9 @@ const Navbar = () => {
     });
   }, []);
   return (
-    <nav className={`w-full h-fit mt-6 ${isScrolled ? "fixed" : "absolute"} `}>
+    <nav
+      className={`w-full h-fit mt-6 ${isScrolled ? "fixed" : "absolute"} z-30 `}
+    >
       <Container>
         <ul
           className={`${
