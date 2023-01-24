@@ -10,7 +10,7 @@ const Banner = () => {
     <Container>
       {/* space for navbar because navbar is absolute */}
       <SpaceNavbar />
-      <div className=" flex lg:flex-row flex-col-reverse items-center justify-between w-full h-fit min-h-screen">
+      <div className=" flex lg:flex-row flex-col-reverse items-center lg:justify-between  w-full h-fit min-h-screen">
         <aside className="lg:w-5/12 space-y-7">
           <SectionParagraph
             titleOne
