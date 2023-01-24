@@ -27,13 +27,13 @@ const Text = ({ textStyle, value, textColor }: TextType) => {
   const getTextStyle = () => {
     switch (textStyle) {
       case "SectionDescription":
-        return "font-source text-lg leading-[32px]";
+        return "font-source lg:text-lg text-sm lg:leading-[32px]";
       case "SectionDescriptionSmall":
         return "font-source text-sm";
       case "SectionTitleOne":
-        return "font-patua text-5xl leading-[60px]"
+        return "font-patua lg:text-5xl text-3xl lg:leading-[60px]"
       case "SectionTitleTwo":
-        return "font-patua text-4xl leading-[48px]"
+        return "font-patua lg:text-4xl text-3xl lg:leading-[48px]"
       case "CardFeatureTitle":
         return "font-source font-semibold text-xl"
       case "InterLight":
@@ -41,7 +41,7 @@ const Text = ({ textStyle, value, textColor }: TextType) => {
       case "InterBold":
         return "font-inter font-semibold text-2xl"
       case "FeatureTitle":
-        return "font-patua text-xl"
+        return "font-patua lg:text-xl"
       case "PriceSubtitle":
         return "font-ibm font-semibold text-sm"
       case "PriceTitle":

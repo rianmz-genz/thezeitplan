@@ -10,14 +10,14 @@ const Banner = () => {
     <Container>
       {/* space for navbar because navbar is absolute */}
       <SpaceNavbar />
-      <div className=" flex items-center justify-between w-full h-fit min-h-screen">
-        <aside className="w-5/12 space-y-7">
+      <div className=" flex lg:flex-row flex-col-reverse items-center justify-between w-full h-fit min-h-screen">
+        <aside className="lg:w-5/12 space-y-7">
           <SectionParagraph
             titleOne
             title="Sebuah cara mudah mengatur jadwal kuliah kamu"
             description="Datang kuliah terlambat karena ketiduran itu tidak masalah; datang kuliah karena lupa jadwal itu sangatlah tidak keren. Aplikasi ini adalah sahabat kamu sekarang, brodie~"
           />
-          <div className="flex w-full space-x-5">
+          <div className="flex lg:flex-row flex-col w-full space-y-3 lg:space-y-0 lg:space-x-5">
             <Button
               buttonStyle="ButtonPrimary"
               value="LearnMore"
@@ -34,7 +34,7 @@ const Banner = () => {
           src="/images/bannerIllustration.svg"
           width={300}
           height={300}
-          className="w-6/12"
+          className="lg:w-6/12"
           alt="banner image"
         />
       </div>

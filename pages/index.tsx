@@ -11,7 +11,7 @@ export default function Home() {
     <PageTemplate>
       <section
         id="banner"
-        className="w-full h-fit min-h-screen justify-center bg-gradient-to-t from-[#F7FFEE] to-[#FFF4F266]"
+        className="w-full h-fit min-h-screen justify-center bg-gradient-to-t from-[#F7FFEE] to-[#FFF4F266] pb-24"
       >
         <Banner />
       </section>
@@ -20,7 +20,7 @@ export default function Home() {
       </section>
       <section
         id="features"
-        className="w-full h-fit min-h-screen flex items-center justify-center"
+        className="w-full h-fit min-h-screen flex items-center justify-center lg:pb-8 pb-20"
       >
         <FeaturesSection />
       </section>

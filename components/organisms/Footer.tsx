@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className="w-full py-20">
       <Container>
-        <div className="flex">
-          <div className="w-5/12 space-y-4">
+        <div className="flex lg:flex-row flex-col space-y-4">
+          <div className="lg:w-5/12 w-full lg:space- w-fully-4">
             <Navbrand />
             <Text
               textStyle="FooterText"
@@ -23,8 +23,8 @@ const Footer = () => {
               value="COPYRIGHT (C) 2023. DEVELOP BY ADRIAN"
             />
           </div>
-          <div className="w-7/12 flex justify-end">
-            <div className="w-3/12 space-y-4 flex flex-col item-center pl-3">
+          <div className="lg:w-7/12 w-full flex lg:flex-row space-y-4 flex-col justify-end">
+            <div className="lg:w-3/12 w-full space-y-4 flex flex-col item-center pl-3">
               <Text textStyle="FooterTitle" value="Sitemap" />
               <ul className="space-y-3">
                 <NavLink target="#banner" children="Home" />
@@ -34,7 +34,7 @@ const Footer = () => {
                 <NavLink target="#download" children="Download" />
               </ul>
             </div>
-            <div className="w-3/12 space-y-4 flex flex-col item-center pl-3">
+            <div className="lg:w-3/12 w-full space-y-4 flex flex-col item-center pl-3">
               <Text textStyle="FooterTitle" value="Partner" />
               <ul className="space-y-3">
                 <Text textStyle="FooterText" value="Friv" textColor="Gray" />
@@ -61,7 +61,7 @@ const Footer = () => {
                 />
               </ul>
             </div>
-            <div className="w-5/12 space-y-4 flex flex-col item-center pl-3">
+            <div className="lg:w-5/12 w-full space-y-4 flex flex-col item-center pl-3">
               <Text textStyle="FooterTitle" value="Tetap Terhubung" />
               <Text
                 textStyle="FooterText"

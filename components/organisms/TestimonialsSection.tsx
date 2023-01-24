@@ -60,14 +60,14 @@ const TestimonialsSection = () => {
     <Container>
       <SpaceNavbar />
       <div className="w-full h-fit flex items-center flex-col">
-        <div className="w-6/12">
+        <div className="lg:w-6/12">
           <SectionParagraph
             title="Apa kata umat manusia tentang aplikasi keren ini?"
             description="Kami tidak memfilter semua review, males soalnya. Jadi semua yang ditampilkan di sini semuanya asli tanpa reksadana."
             center
           />
         </div>
-        <div className="w-full grid grid-cols-3 h-fit gap-4 mt-8">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 h-fit gap-4 mt-8">
           {Reviews.map((reviewItem) => (
             <ReviewCard
               review={reviewItem.review}

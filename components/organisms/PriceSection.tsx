@@ -57,14 +57,14 @@ const PriceSection = () => {
     <Container>
       <SpaceNavbar />
       <div className="w-full h-fit flex items-center flex-col">
-        <div className="w-6/12">
+        <div className="lg:w-6/12 w-full">
           <SectionParagraph
             title="Main catur sambil bersepeda, beda harga beda fitur"
             description="Aplikasi ini gratis sebenernya, brodie. Tapi kalo mau bayar gapapa juga sih, untuk gantinya kami kasih fitur yang spesial buat kamu!"
             center
           />
         </div>
-        <div className="grid grid-cols-3 gap-4 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
           {PriceList.map((list) => (
             <PriceCard
               key={list.price}
@@ -75,7 +75,7 @@ const PriceSection = () => {
             />
           ))}
         </div>
-        <div className="w-6/12 text-center mt-8">
+        <div className="lg:w-6/12 w-full text-center mt-8">
             <Text textStyle="CardFeatureTitle" value="Harap Diingat:" textColor="JustDark"/>
             <Text textStyle="SectionDescription" value="Harga di atas belum termasuk KKM, dan harga sewaktu-waktu bisa berubah secara mendadak seperti pengumuman PPKM darurat." textColor="Gray"/>
         </div>

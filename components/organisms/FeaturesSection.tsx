@@ -38,15 +38,15 @@ const FeaturesSection = () => {
   return (
     <Container>
       <SpaceNavbar />
-      <div className="w-full flex h-fit min-h-screen justify-around items-center">
+      <div className="w-full flex lg:flex-row flex-col h-fit min-h-screen justify-around items-center">
         <Image
           src="/images/featureIllustration.svg"
           width={300}
           height={300}
-          className="w-5/12"
+          className="lg:w-5/12 w-full"
           alt="banner image"
         />
-        <div className="w-6/12 space-y-6">
+        <div className="lg:w-6/12 w-full space-y-6">
           <SectionParagraph
             title="Memangnya ada fitur apa aja sih di aplikasi yang katanya keren ini? Jadi penasaran nich~"
             description="Aplikasi sekeren ini akan membuat kamu tidak dapat memberi alasan apapun untuk bolos matkul dosen (HAHA MAMPUS!). Lagian lo kuliah tapi jarang masuk, titip absen doang!"
