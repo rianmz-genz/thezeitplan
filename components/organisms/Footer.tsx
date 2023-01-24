@@ -3,9 +3,9 @@ import Navbrand from "../molecules/Navbrand";
 import Text from "../atoms/Text";
 import NavLink from "../molecules/NavLink";
 import Container from "../layout/Container";
-import {AiOutlineInstagram} from "react-icons/ai"
-import {SlSocialFacebook} from "react-icons/sl"
-import {CiTwitter} from "react-icons/ci"
+import { AiOutlineInstagram } from "react-icons/ai";
+import { SlSocialFacebook } from "react-icons/sl";
+import { CiTwitter } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="w-full py-20">
@@ -27,11 +27,11 @@ const Footer = () => {
             <div className="lg:w-3/12 w-full space-y-4 flex flex-col item-center pl-3">
               <Text textStyle="FooterTitle" value="Sitemap" />
               <ul className="space-y-3">
-                <NavLink target="#banner" children="Home" />
-                <NavLink target="#features" children="Fitur - fitur" />
-                <NavLink target="#price" children="Harga" />
-                <NavLink target="#testimonials" children="Testimoni" />
-                <NavLink target="#download" children="Download" />
+                <NavLink target="#banner">Home</NavLink>
+                <NavLink target="#features">Fitur - fitur</NavLink>
+                <NavLink target="#price">Harga</NavLink>
+                <NavLink target="#testimonials">Testimoni</NavLink>
+                <NavLink target="#download">Download</NavLink>
               </ul>
             </div>
             <div className="lg:w-3/12 w-full space-y-4 flex flex-col item-center pl-3">
@@ -70,13 +70,13 @@ const Footer = () => {
               />
               <div className="flex w-full space-x-4">
                 <div className="text-2xl p-3 rounded-full bg-primaryextralight text-primary">
-                    <AiOutlineInstagram />
+                  <AiOutlineInstagram />
                 </div>
                 <div className="text-2xl p-3 rounded-full bg-primaryextralight text-primary">
-                    <SlSocialFacebook />
+                  <SlSocialFacebook />
                 </div>
                 <div className="text-2xl p-3 rounded-full bg-primaryextralight text-primary">
-                    <CiTwitter />
+                  <CiTwitter />
                 </div>
               </div>
             </div>

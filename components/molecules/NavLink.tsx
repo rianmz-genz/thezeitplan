@@ -1,7 +1,7 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
 interface NavLinkProps {
   target: string;
-  children: ReactNode;
+  children: ReactNode | string;
 }
 const NavLink: FC<NavLinkProps> = ({ target, children }) => {
   const [isActive, setIsActive] = useState<boolean>(false);

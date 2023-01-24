@@ -70,6 +70,7 @@ const TestimonialsSection = () => {
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 h-fit gap-4 mt-8">
           {Reviews.map((reviewItem) => (
             <ReviewCard
+            key={reviewItem.profileImage}
               review={reviewItem.review}
               star={reviewItem.star}
               username={reviewItem.username}
