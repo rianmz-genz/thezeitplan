@@ -2,7 +2,7 @@ import React from 'react'
 
 const SpaceNavbar = () => {
   return (
-    <div className="h-32 w-full"></div>
+    <div className="lg:h-32 h-24 w-full"></div>
   )
 }
 

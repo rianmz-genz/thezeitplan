@@ -34,7 +34,7 @@ const Banner = () => {
           src="/images/bannerIllustration.svg"
           width={300}
           height={300}
-          className="lg:w-6/12"
+          className="lg:w-6/12 w-full"
           alt="banner image"
         />
       </div>

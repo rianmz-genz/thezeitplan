@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul
           className={`${
             isScrolled ? "shadow-xl shadow-primaryextralight" : ""
-          } rounded-lg w-full h-fit bg-white  px-8 py-5 flex lg:flex-row flex-col lg:space-y-0 lg:justify-between space-y-3 lg:items-center`}
+          } rounded-lg w-full h-fit bg-white px-4 py-3 lg:px-8 lg:py-5 flex lg:flex-row flex-col lg:space-y-0 lg:justify-between space-y-3 lg:items-center`}
         >
           <div className="w-full lg:w-3/12 flex justify-between">
             <Navbrand />
